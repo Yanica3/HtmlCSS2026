@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff5f8;  
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f1e87c;  
+    padding: 20px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;    
+    border-bottom: 5px solid #ff4081;  
+}
+
+nav {
+    display: flex;
+    gap: 20px;  
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff4081;  
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ТУК БЕШЕ ГРЕШКАТА - вече е поправена */
+nav a:hover {
+    color: #c60055;  
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: #ff4081;
+    font-size: 2.5rem;
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 25px;  
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ffeb3b;
+    color: #ff4081;
+    transform: scale(1.1);  
+}
+
+ul {
+    list-style-type: none;  
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+
+/* --- СТИЛОВЕ САМО ЗА СТРАНИЦАТА С КУРСОВЕТЕ --- */
+
+.courses-container {
+    display: flex;
+    flex-direction: row;     
+    flex-wrap: wrap;         
+    justify-content: center; 
+    gap: 30px;               
+    padding: 20px;
+}
+
+article {
+    background-color: white;
+    border: 2px solid #F8BBD0; 
+    border-radius: 20px;
+    padding: 20px;
+    width: 280px;              
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-10px); 
+    border-color: #ff4081;
+}
+
+article img {
+    width: 100%;
+    height: 350px;             
+    object-fit: cover;         
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+article h3 {
+    color: #ff4081;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+article p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #555;
+}
